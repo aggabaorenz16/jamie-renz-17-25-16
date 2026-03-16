@@ -1,4 +1,4 @@
-let text = "Every moment with you is my favorite memory, Happy 20th Monthsary, Asawa ko.!";
+let text = "Happy 20th Monthsary, my beautiful my love! You are the best thing that has ever happened to me, and I cherish every moment we spend together. You are my best friend, my confidante, and my safe space. Thank you for filling my life with so much joy and love. I promise to always support your dreams, hold your hand through the hard times, and cherish every single moment with you. I love you more than words can express";
 let i = 0;
 
 function typeText(){
