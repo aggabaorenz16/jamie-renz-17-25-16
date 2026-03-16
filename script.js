@@ -1,4 +1,4 @@
-let text = "Every moment with you is my favorite memory, Happy Monthsary Asawa ko!";
+let text = "Every moment with you is my favorite memory, Happy 20th Monthsary, Asawa ko.!";
 let i = 0;
 
 function typeText(){
