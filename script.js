@@ -45,23 +45,25 @@ slides[index].classList.add("active");
 }
 
 function createHearts(){
+  setInterval(()=>{
+    let heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
 
-setInterval(()=>{
+    // Random horizontal position
+    heart.style.left = Math.random() * 100 + "vw";
+    // Random size
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+    // Random animation duration
+    let duration = 3 + Math.random() * 4;
+    heart.style.animationDuration = duration + "s";
 
-let heart = document.createElement("div");
-heart.classList.add("heart");
-heart.innerHTML="❤️";
+    document.body.appendChild(heart);
 
-heart.style.left = Math.random()*100 + "vw";
-heart.style.fontSize = (10 + Math.random()*20) + "px";
-heart.style.animationDuration = (3 + Math.random()*5) + "s";
+    // Remove heart after animation completes
+    setTimeout(()=>{
+      heart.remove();
+    }, duration * 1000);
 
-document.body.appendChild(heart);
-
-setTimeout(()=>{
-heart.remove();
-},8000);
-
-},300);
-
+  }, 300);
 }
